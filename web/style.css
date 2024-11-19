@@ -1,0 +1,147 @@
+/* General Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    color: #f7ebeb;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d3b9b9;
+    color: #333;
+    background-image: url(https://i.pinimg.com/236x/79/45/27/794527cb36d209841d47d7177bb896a6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #f7ebeb;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    background: #747171;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(192, 164, 164, 0.1);
+    max-width: 1200px;
+    width: 90%; /* Adapt to different screen sizes */
+    color: #fff;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.profile-pic {
+    width: 100%;
+    max-width: 300px; /* Responsive size for smaller screens */
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #333;
+    background-color: #f7f4f4;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.project {
+    margin-bottom: 1.5rem;
+}
+
+.project a {
+    color: #a33409;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    background-size: cover;
+    background-image: url(https://www.pinterest.com/pin/336362665936611448/);
+    background-attachment: fixed;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 0.5rem;
+    }
+
+    .profile-container {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 200px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        gap: 0.2rem;
+    }
+
+    section {
+        padding: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
